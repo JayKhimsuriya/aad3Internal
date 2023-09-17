@@ -3,7 +3,7 @@ var BlogTable = require("../model/table")
 
 var router = express.Router()
 router.post("/addInfo",(req,res) => {console.log("API Working",req.body)
-var employee = new BlogTable({
+var Blog = new BlogTable({
     title: req.body.title,
     description:req.body.description 
 })
